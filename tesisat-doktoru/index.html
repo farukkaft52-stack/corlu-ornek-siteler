@@ -4,114 +4,173 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Tesisat Doktoru | Çorlu</title>
-<meta name="description" content="Tesisat Doktoru — Su kaçağı, tıkanıklık, petek ve banyo tadilatı — aynı gün servis, işinizi bitirip temiz bırakıyoruz.">
+<title>Tesisat Doktoru | Çorlu Sıhhi Tesisat</title>
+<meta name="description" content="Su kaçağından tıkanıklığa, Çorlu&#x27;da evinizin tesisat doktoru. Arızanın yerini bulur, yalnızca gereken yeri açar, işi bitirip toparlarız.">
+<meta name="theme-color" content="#0a58ca">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--ana:#0b5cab;--acik:#e8f1fb;--vurgu:#f59e0b;--yazi:#0f172a;--soluk:#475569;--zemin:#ffffff;--cizgi:#e2e8f0}
+:root{--bg:#ffffff;--fg:#0f172a;--mut:#5b6b82;--pri:#0a58ca;--acc:#ffb020;--sur:#f2f6fc;--line:#e3e9f2;--onpri:#ffffff;--hf:'Plus Jakarta Sans',system-ui,sans-serif;--bf:'Plus Jakarta Sans',system-ui,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--yazi);background:var(--zemin);line-height:1.55}
+html{scroll-behavior:smooth}
+body{font-family:var(--bf);color:var(--fg);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--hf);line-height:1.15}
 a{color:inherit;text-decoration:none}
-.kap{max-width:1080px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--cizgi);z-index:10}
-header .kap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
-.logo{font-weight:800;font-size:1.05rem;color:var(--ana);display:flex;align-items:center;gap:8px;min-width:0}
+img{display:block;max-width:100%}
+.kap{max-width:1180px;margin:0 auto;padding:0 20px}
+.mob-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;gap:8px;padding:10px;background:var(--bg);border-top:1px solid var(--line)}
+.mob-bar a{flex:1;display:flex;justify-content:center;align-items:center;gap:8px;padding:13px;border-radius:12px;font-weight:700}
+.mob-bar .m1{background:var(--pri);color:var(--onpri)}
+.mob-bar .m2{background:#25d366;color:#fff}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+iframe.harita{width:100%;height:100%;min-height:320px;border:0;display:block}
+@media (max-width:760px){.mob-bar{display:flex}body{padding-bottom:76px}}
+
+header{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:28px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--hf);font-weight:800;font-size:1.1rem;min-width:0}
+.logo b{width:38px;height:38px;border-radius:10px;background:var(--pri);color:var(--onpri);display:grid;place-items:center;flex:none}
 .logo span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;font-weight:700;font-size:.98rem;white-space:nowrap}
-.btn-ana{background:var(--vurgu);color:#111}
-.btn-wa{background:#25d366;color:#fff}
-.btn-cer{border:2px solid rgba(255,255,255,.6);color:#fff}
-header .btn{padding:9px 14px;font-size:.9rem}
-.hero{background:var(--ana);color:#fff;padding:72px 0 80px;position:relative;overflow:hidden}
-.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.06)}
-.rozet{display:inline-block;background:rgba(255,255,255,.14);padding:6px 12px;border-radius:99px;font-size:.85rem;font-weight:600;margin-bottom:18px}
-.hero h1{font-size:clamp(1.8rem,4.6vw,3rem);line-height:1.15;max-width:720px;letter-spacing:-.01em}
-.hero p{margin:16px 0 28px;font-size:1.1rem;opacity:.9;max-width:600px}
-.hero .butonlar{display:flex;flex-wrap:wrap;gap:12px}
-section{padding:64px 0}
-h2{font-size:clamp(1.4rem,3vw,2rem);margin-bottom:8px}
-.ust{color:var(--soluk);margin-bottom:32px}
-.izgara{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.kart{border:1px solid var(--cizgi);border-radius:14px;padding:22px;background:#fff}
-.kart .ik{width:46px;height:46px;border-radius:12px;background:var(--acik);color:var(--ana);display:grid;place-items:center;margin-bottom:14px}
-.kart h3{font-size:1.05rem;margin-bottom:6px}
-.kart p{color:var(--soluk);font-size:.95rem}
-.adimlar{background:var(--acik)}
-.adim{display:flex;gap:14px;align-items:flex-start}
-.adim b{flex:none;width:36px;height:36px;border-radius:50%;background:var(--ana);color:#fff;display:grid;place-items:center}
-.bolge ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
-.bolge li{border:1px solid var(--cizgi);border-radius:99px;padding:6px 14px;font-size:.92rem}
-.iletisim{background:var(--ana);color:#fff}
-.iletisim .izgara{align-items:stretch}
-.ibox{background:rgba(255,255,255,.08);border-radius:14px;padding:22px;display:flex;gap:14px;align-items:flex-start}
-.ibox small{display:block;opacity:.75}
-.ibox strong{font-size:1.1rem}
-footer{padding:24px 0 96px;color:var(--soluk);font-size:.85rem;text-align:center}
-.sabit{position:fixed;left:0;right:0;bottom:0;display:none;gap:8px;padding:10px;background:#fff;border-top:1px solid var(--cizgi)}
-.sabit .btn{flex:1;justify-content:center}
-@media (max-width:640px){header .btn{display:none}.sabit{display:flex}.hero{padding:48px 0 56px}section{padding:48px 0}}
+.nav ul{display:flex;gap:24px;list-style:none;margin-left:auto;font-weight:500;color:var(--mut);font-size:.95rem}
+.nav ul a:hover{color:var(--pri)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 22px;border-radius:12px;font-weight:700;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.b1{background:var(--pri);color:var(--onpri);box-shadow:0 10px 24px -10px var(--pri)}
+.b2{background:var(--sur);color:var(--fg);border:1px solid var(--line)}
+.nav .btn{padding:10px 16px;font-size:.92rem}
+.hero{padding:64px 0 80px}
+.hero .kap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.etiket{display:inline-flex;align-items:center;gap:8px;background:var(--sur);color:var(--pri);border:1px solid var(--line);padding:7px 14px;border-radius:99px;font-weight:600;font-size:.85rem}
+.etiket i{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px #22c55e33}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.6rem);font-weight:800;letter-spacing:-.025em;margin:20px 0 18px}
+.hero p.alt{font-size:1.12rem;color:var(--mut);max-width:540px}
+.hero .btns{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 26px}
+.tikler{display:flex;flex-wrap:wrap;gap:10px 22px;list-style:none;color:var(--mut);font-size:.93rem}
+.tikler li{display:flex;align-items:center;gap:7px}.tikler svg{color:var(--pri)}
+.gorsel{position:relative}
+.gorsel img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:28px;box-shadow:0 30px 60px -30px rgba(15,23,42,.45)}
+.gorsel:before{content:"";position:absolute;inset:24px -24px -24px 24px;border-radius:28px;background:var(--acc);opacity:.25;z-index:-1}
+.yuzen{position:absolute;left:-28px;bottom:36px;background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:16px 18px;display:flex;gap:12px;align-items:center;box-shadow:0 20px 40px -20px rgba(15,23,42,.35)}
+.yuzen b{width:44px;height:44px;border-radius:12px;background:var(--acc);color:#111;display:grid;place-items:center}
+.yuzen small{display:block;color:var(--mut);font-size:.8rem}
+.guven{background:var(--sur);border-block:1px solid var(--line)}
+.guven .kap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-block:26px}
+.guven div{display:flex;gap:12px;align-items:center;font-weight:600}
+.guven svg{color:var(--pri);flex:none}
+section.blok{padding:88px 0}
+.bas{max-width:640px;margin-bottom:44px}
+.ust{color:var(--pri);font-weight:700;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+.bas h2{font-size:clamp(1.7rem,3.2vw,2.5rem);margin:10px 0 12px;letter-spacing:-.02em}
+.bas p{color:var(--mut)}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hk{border:1px solid var(--line);border-radius:20px;padding:28px;background:var(--bg);transition:border-color .2s,box-shadow .2s}
+.hk:hover{border-color:var(--pri);box-shadow:0 20px 40px -28px var(--pri)}
+.hk b{width:52px;height:52px;border-radius:14px;background:var(--sur);color:var(--pri);display:grid;place-items:center;margin-bottom:18px}
+.hk h3{font-size:1.12rem;margin-bottom:8px}.hk p{color:var(--mut);font-size:.95rem}
+.hakkinda .kap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.hakkinda img{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:24px}
+.liste{list-style:none;display:grid;gap:14px;margin-top:22px}
+.liste li{display:flex;gap:12px}.liste svg{color:var(--pri);flex:none;margin-top:2px}
+.galeri{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:14px}
+.galeri img{width:100%;height:100%;object-fit:cover;border-radius:18px}
+.galeri img:first-child{grid-row:span 2}
+.galeri img:last-child{grid-column:span 2}
+.sss-w{display:grid;grid-template-columns:1fr 1.4fr;gap:56px}
+.sss{border-bottom:1px solid var(--line);padding:20px 0}
+.sss summary{display:flex;justify-content:space-between;gap:16px;font-weight:700;font-size:1.05rem}
+.sss i{font-style:normal;color:var(--pri);font-size:1.4rem;line-height:1;transition:transform .2s}
+.sss[open] i{transform:rotate(45deg)}
+.sss p{color:var(--mut);margin-top:10px}
+.cta{background:var(--pri);color:var(--onpri);border-radius:28px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap;position:relative;overflow:hidden}
+.cta:after{content:"";position:absolute;right:-60px;top:-80px;width:280px;height:280px;border-radius:50%;background:var(--acc);opacity:.25}
+.cta h2{font-size:clamp(1.5rem,3vw,2.2rem);max-width:560px}
+.cta .btn{background:var(--acc);color:#111;position:relative;z-index:1}
+.ilet{display:grid;grid-template-columns:1fr 1.3fr;gap:24px}
+.ikart{display:grid;gap:14px}
+.ikart > *{display:flex;gap:14px;align-items:center;border:1px solid var(--line);border-radius:16px;padding:18px}
+.ikart b{width:44px;height:44px;border-radius:12px;background:var(--sur);color:var(--pri);display:grid;place-items:center;flex:none}
+.ikart small{display:block;color:var(--mut);font-size:.82rem}
+.ilet .hw{border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{background:var(--sur);border:1px solid var(--line);border-radius:99px;padding:5px 13px;font-size:.88rem}
+@media (max-width:960px){.nav ul{display:none}.hero .kap,.hakkinda .kap,.sss-w,.ilet{grid-template-columns:1fr;gap:36px}.hgrid{grid-template-columns:1fr 1fr}.guven .kap{grid-template-columns:1fr 1fr}.yuzen{left:12px}.gorsel:before{display:none}}
+@media (max-width:760px){.nav .btn{display:none}.hgrid{grid-template-columns:1fr}.hero{padding:36px 0 56px}section.blok{padding:60px 0}.galeri{grid-template-columns:1fr 1fr;grid-template-rows:160px 160px 160px}.galeri img:first-child{grid-row:auto;grid-column:span 2}.galeri img:last-child{grid-column:auto}.cta{padding:36px 26px}.gorsel img{aspect-ratio:4/3}}
+
 </style>
 </head>
 <body>
-<header><div class="kap">
-  <a class="logo" href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s-6 6.6-6 11a6 6 0 0 0 12 0c0-4.4-6-11-6-11z"/></svg><span>Tesisat Doktoru</span></a>
-  <a class="btn btn-ana" href="tel:+905431045759"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> 0543 104 57 59</a>
+
+<header><div class="kap nav">
+  <a class="logo" href="#"><b><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s-6 6.6-6 11a6 6 0 0 0 12 0c0-4.4-6-11-6-11z"/></svg></b><span>Tesisat Doktoru</span></a>
+  <ul><li><a href="#hizmetler">Hizmetler</a></li><li><a href="#hakkimizda">Hakkımızda</a></li><li><a href="#sss">SSS</a></li><li><a href="#iletisim">İletişim</a></li></ul>
+  <a class="btn b1" href="tel:+905431045759"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> 0543 104 57 59</a>
 </div></header>
 
 <section class="hero"><div class="kap">
-  <span class="rozet">Aynı gün servis · Çorlu ve çevresi</span>
-  <h1>Çorlu&#x27;da su tesisatı arızasına hızlı ve temiz çözüm</h1>
-  <p>Su kaçağı, tıkanıklık, petek ve banyo tadilatı — aynı gün servis, işinizi bitirip temiz bırakıyoruz.</p>
-  <div class="butonlar">
-    <a class="btn btn-ana" href="tel:+905431045759"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> Hemen Ara</a>
-    <a class="btn btn-wa" href="https://wa.me/905431045759">WhatsApp'tan Yaz</a>
-    <a class="btn btn-cer" href="#hizmetler">Hizmetlerimiz</a>
+  <div>
+    <span class="etiket"><i></i>Bugün servis için müsait · Çorlu</span>
+    <h1>Tesisatınızın derdine teşhis, onarım ve temiz teslim.</h1>
+    <p class="alt">Su kaçağından tıkanıklığa, Çorlu&#x27;da evinizin tesisat doktoru. Arızanın yerini bulur, yalnızca gereken yeri açar, işi bitirip toparlarız.</p>
+    <div class="btns"><a class="btn b1" href="tel:+905431045759"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> Hemen Ara</a><a class="btn b2" href="https://wa.me/905431045759"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg> WhatsApp'tan yazın</a></div>
+    <ul class="tikler"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Yerinde ücretsiz keşif</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> İş öncesi net fiyat</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Temiz teslim</li></ul>
+  </div>
+  <div class="gorsel"><img src="https://images.unsplash.com/photo-1749532125405-70950966b0e5?auto=format&fit=crop&q=75&w=1100" alt="Tesisat Doktoru ustası çalışırken">
+    <div class="yuzen"><b><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></b><div><small>Hemen arayın</small><strong>0543 104 57 59</strong></div></div></div>
+</div></section>
+
+<div class="guven"><div class="kap">
+  <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Aynı gün servis</div><div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg> Sürpriz fiyat yok</div>
+  <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8zM18 15l.9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9z"/></svg> Temiz işçilik</div><div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg> İşçiliğin arkasındayız</div>
+</div></div>
+
+<section class="blok" id="hizmetler"><div class="kap">
+  <div class="bas"><span class="ust">Hizmetlerimiz</span><h2>Çorlu'da sıhhi tesisat işleriniz için tek numara</h2><p>Ev, apartman ve iş yerlerinde küçük onarımdan büyük yenilemeye kadar.</p></div>
+  <div class="hgrid"><article class="hk"><b><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s-6 6.6-6 11a6 6 0 0 0 12 0c0-4.4-6-11-6-11z"/></svg></b><h3>Su kaçağı tespiti</h3><p>Kaçağın yerini cihazla bulup yalnızca gereken noktayı açıyoruz; gereksiz kırım yok.</p></article><article class="hk"><b><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h8v4h6v10M3 11h4v4h6"/></svg></b><h3>Tıkanıklık açma</h3><p>Lavabo, tuvalet, mutfak ve ana gider tıkanıklıklarını makineyle açıyoruz.</p></article><article class="hk"><b><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></b><h3>Sıhhi tesisat yenileme</h3><p>Eskiyen boru hatlarını yeniliyor, yeni daire tesisatını sıfırdan döşüyoruz.</p></article><article class="hk"><b><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM6 12V5a2 2 0 0 1 4 0"/></svg></b><h3>Banyo tadilatı</h3><p>Tesisatından seramiğine, vitrifiyesinden duşakabinine anahtar teslim banyo.</p></article><article class="hk"><b><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 17h6"/></svg></b><h3>Petek temizliği</h3><p>Isınmayan peteklerin içini makineyle yıkayıp verimini geri kazandırıyoruz.</p></article><article class="hk"><b><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM6 12V5a2 2 0 0 1 4 0"/></svg></b><h3>Klozet &amp; lavabo montajı</h3><p>Gömme rezervuar, asma klozet, lavabo ve batarya montajı.</p></article></div>
+</div></section>
+
+<section class="blok hakkinda" id="hakkimizda" style="background:var(--sur)"><div class="kap">
+  <img src="https://images.unsplash.com/photo-1676210134188-4c05dd172f89?auto=format&fit=crop&q=75&w=1000" alt="" loading="lazy">
+  <div><span class="ust">Hakkımızda</span>
+    <h2 style="font-size:clamp(1.6rem,3vw,2.3rem);margin:10px 0 14px">Tesisat Doktoru</h2>
+    <p style="color:var(--mut)">Çorlu ve çevresinde sıhhi tesisat işlerinde, söz verdiğimiz saatte gelip işi ilk seferde doğru yapmayı ilke ediniyoruz. Çalıştığımız yeri kendi evimiz gibi koruyor, iş bitince temizleyip öyle çıkıyoruz.</p>
+    <ul class="liste"><li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Arızayı yerinde görüp işe başlamadan fiyatı netleştiriyoruz.</li><li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Kaliteli ve garantili malzeme kullanıyoruz.</li><li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> İş bitince yapılanı size gösterip öyle teslim ediyoruz.</li></ul>
   </div>
 </div></section>
 
-<section id="hizmetler"><div class="kap">
-  <h2>Hizmetlerimiz</h2>
-  <p class="ust">Tesisat Doktoru olarak Çorlu'da ev ve iş yerlerine şu hizmetleri veriyoruz.</p>
-  <div class="izgara">
-<article class="kart"><div class="ik"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s-6 6.6-6 11a6 6 0 0 0 12 0c0-4.4-6-11-6-11z"/></svg></div><h3>Su kaçağı tespiti</h3><p>Kırmadan, cihazla kaçak noktasını bulup yalnızca gereken yeri açıyoruz.</p></article>
-<article class="kart"><div class="ik"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h8v4h6v10M3 11h4v4h6"/></svg></div><h3>Tıkanıklık açma</h3><p>Lavabo, tuvalet, mutfak ve ana gider tıkanıklıklarını robotla açıyoruz.</p></article>
-<article class="kart"><div class="ik"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></div><h3>Sıhhi tesisat</h3><p>Yeni tesisat döşeme, boru yenileme, batarya ve rezervuar değişimi.</p></article>
-<article class="kart"><div class="ik"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM6 12V5a2 2 0 0 1 4 0"/></svg></div><h3>Banyo &amp; mutfak tadilatı</h3><p>Tesisatından seramiğine anahtar teslim yenileme.</p></article>
-<article class="kart"><div class="ik"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 17h6"/></svg></div><h3>Petek temizliği</h3><p>Isınmayan petekleri ilaçlı yıkama ile ilk günkü verimine döndürüyoruz.</p></article>
-<article class="kart"><div class="ik"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-4-3-6-4-9-1 3-3 4-3 4s0-3-2-5c0 4-5 6-5 10a7 7 0 0 0 7 7z"/></svg></div><h3>Doğalgaz tesisatı</h3><p>Kombi bağlantısı, kolon ve iç tesisat işleri.</p></article>
+<section class="blok"><div class="kap">
+  <div class="bas"><span class="ust">Çalışmalarımızdan</span><h2>Düzgün işçilik, temiz sonuç</h2></div>
+  <div class="galeri"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=75&w=900" alt="" loading="lazy"><img src="https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&q=75&w=900" alt="" loading="lazy"><img src="https://images.unsplash.com/photo-1775359924006-557dba8c862b?auto=format&fit=crop&q=75&w=900" alt="" loading="lazy"><img src="https://images.unsplash.com/photo-1669725341213-7379ff6c90d5?auto=format&fit=crop&q=75&w=900" alt="" loading="lazy"></div>
+</div></section>
+
+<section class="blok" id="sss" style="padding-top:0"><div class="kap sss-w">
+  <div class="bas"><span class="ust">Sık sorulanlar</span><h2>Aklınıza takılanlar</h2><p>Bulamadığınız bir soru varsa arayın, hemen yanıtlayalım.</p></div>
+  <div><details class="sss"><summary><span>Fiyat ne zaman belli oluyor?</span><i>+</i></summary><p>Arızayı yerinde gördükten sonra, işe başlamadan önce net fiyat veriyoruz. Onay vermeden iş yapılmaz.</p></details><details class="sss"><summary><span>Su kaçağı için duvarı kırmak gerekiyor mu?</span><i>+</i></summary><p>Çoğu durumda kaçak noktasını önce tespit edip yalnızca o bölümü açıyoruz; gereksiz kırım yapmıyoruz.</p></details><details class="sss"><summary><span>Ne kadar sürede gelebiliyorsunuz?</span><i>+</i></summary><p>Çorlu merkez ve yakın mahallelerde genellikle aynı gün içinde geliyoruz. Acil durumda arayın, durumu konuşalım.</p></details><details class="sss"><summary><span>Malzemeyi siz mi getiriyorsunuz?</span><i>+</i></summary><p>İsterseniz malzemeyi biz temin ediyoruz; kendi aldığınız ürünün montajını da yapıyoruz.</p></details></div>
+</div></section>
+
+<section style="padding-bottom:88px"><div class="kap"><div class="cta">
+  <h2>Arızayı büyümeden çözelim. Bir telefon yeter.</h2>
+  <a class="btn" href="tel:+905431045759"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> 0543 104 57 59</a>
+</div></div></section>
+
+<section class="blok" id="iletisim" style="padding-top:0"><div class="kap">
+  <div class="bas"><span class="ust">İletişim</span><h2>Bize ulaşın</h2></div>
+  <div class="ilet">
+    <div><div class="ikart">
+      <a href="tel:+905431045759"><b><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></b><div><small>Telefon</small><strong>0543 104 57 59</strong></div></a>
+      <a href="https://wa.me/905431045759"><b><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg></b><div><small>WhatsApp</small><strong>Mesaj gönderin</strong></div></a>
+      <div><b><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></b><div><small>Adres</small><strong>Çorlu / Tekirdağ</strong></div></div>
+      <div><b><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></b><div><small>Çalışma saatleri</small><strong>Her gün 08:00 – 20:00</strong></div></div>
+    </div>
+    <ul class="chips"><li class="chip">Reşadiye</li><li class="chip">Muhittin</li><li class="chip">Kazımiye</li><li class="chip">Şeyhsinan</li><li class="chip">Hıdırağa</li><li class="chip">Cemaliye</li><li class="chip">Zafer</li><li class="chip">Alipaşa</li><li class="chip">Önerler</li><li class="chip">Esentepe</li><li class="chip">Nusratiye</li><li class="chip">Rumeli</li><li class="chip">Hatip</li><li class="chip">Silahtarağa</li><li class="chip">Kemalettin</li><li class="chip">Yenice</li><li class="chip">Ergene</li><li class="chip">Velimeşe</li><li class="chip">Marmaracık</li><li class="chip">Çerkezköy</li><li class="chip">Muratlı</li></ul></div>
+    <div class="hw"><iframe class="harita" src="https://maps.google.com/maps?q=Tesisat%20Doktoru%20%C3%87orlu%20Tekirda%C4%9F&z=15&output=embed" loading="lazy" title="Harita"></iframe></div>
   </div>
 </div></section>
 
-<section class="adimlar"><div class="kap">
-  <h2>Nasıl çalışıyoruz?</h2>
-  <p class="ust">Sürpriz fiyat yok, iş bitmeden ödeme yok.</p>
-  <div class="izgara">
-    <div class="adim"><b>1</b><div><h3>Arayın ya da yazın</h3><p>Sorunu kısaca anlatın, fotoğraf atın.</p></div></div>
-    <div class="adim"><b>2</b><div><h3>Yerinde bakalım</h3><p>Gelip arızayı görür, net fiyatı söyleriz.</p></div></div>
-    <div class="adim"><b>3</b><div><h3>Temiz teslim</h3><p>İşi bitirir, ortalığı toparlayıp teslim ederiz.</p></div></div>
-  </div>
-</div></section>
-
-<section class="bolge"><div class="kap">
-  <h2>Hizmet bölgemiz</h2>
-  <p class="ust">Çorlu'nun tüm mahallelerine ve yakın ilçelere gidiyoruz.</p>
-  <ul><li>Reşadiye</li><li>Muhittin</li><li>Kazımiye</li><li>Şeyhsinan</li><li>Hıdırağa</li><li>Cemaliye</li><li>Zafer</li><li>Alipaşa</li><li>Önerler</li><li>Esentepe</li><li>Nusratiye</li><li>Rumeli</li><li>Hatip</li><li>Silahtarağa</li><li>Kemalettin</li><li>Yenice</li><li>Ergene</li><li>Velimeşe</li></ul>
-</div></section>
-
-<section class="iletisim" id="iletisim"><div class="kap">
-  <h2>İletişim</h2>
-  <p class="ust" style="color:rgba(255,255,255,.8)">Ulaşmanın en hızlı yolu telefon ya da WhatsApp.</p>
-  <div class="izgara">
-    <a class="ibox" href="tel:+905431045759"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><div><small>Telefon</small><strong>0543 104 57 59</strong></div></a>
-    <div class="ibox"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><small>Adres</small><strong>Çorlu / Tekirdağ</strong></div></div>
-    <div class="ibox"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><small>Çalışma saatleri</small><strong>Her gün 08:00 – 21:00</strong></div></div>
-  </div>
-</div></section>
-
-<footer><div class="kap">© 2026 Tesisat Doktoru · Çorlu, Tekirdağ<br>Bu sayfa Tesisat için hazırlanmış örnek bir tasarımdır; metinler ve saatler size göre güncellenir.</div></footer>
-
-<div class="sabit">
-  <a class="btn btn-ana" href="tel:+905431045759"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> Ara</a>
-  <a class="btn btn-wa" href="https://wa.me/905431045759">WhatsApp</a>
-</div>
+<footer style="padding:28px 0 32px;text-align:center;font-size:.85rem;color:var(--mut)">
+  <div class="kap">© 2026 Tesisat Doktoru · Çorlu, Tekirdağ<br>
+  <span style="opacity:.8">Bu sayfa Tesisat Doktoru için hazırlanmış örnek bir tasarımdır. Fotoğraflar: Unsplash.</span></div>
+</footer>
+<div class="mob-bar"><a class="m1" href="tel:+905431045759"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> Ara</a><a class="m2" href="https://wa.me/905431045759"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg> WhatsApp</a></div>
 </body>
 </html>

@@ -4,114 +4,132 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Birlik Elektrik | Çorlu</title>
-<meta name="description" content="Birlik Elektrik — Sigorta atması, kısa devre, pano ve aydınlatma işleri — ehliyetli ekip, standartlara uygun işçilik.">
+<title>Birlik Elektrik | Çorlu Elektrik</title>
+<meta name="description" content="Birlik Elektrik; Bağlariçi&#x27;ndeki dükkânından Çorlu&#x27;nun dört bir yanına arıza, tesisat ve aydınlatma hizmeti verir.">
+<meta name="theme-color" content="#111111">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ana:#1f2937;--acik:#fff7e6;--vurgu:#f59e0b;--yazi:#0f172a;--soluk:#475569;--zemin:#ffffff;--cizgi:#e2e8f0}
+:root{--bg:#faf8f2;--fg:#111111;--mut:#5a5852;--pri:#111111;--acc:#d4a106;--sur:#f1ede2;--line:#dedad0;--onpri:#ffffff;--hf:'Playfair Display',system-ui,sans-serif;--bf:'Inter',system-ui,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--yazi);background:var(--zemin);line-height:1.55}
+html{scroll-behavior:smooth}
+body{font-family:var(--bf);color:var(--fg);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--hf);line-height:1.15}
 a{color:inherit;text-decoration:none}
-.kap{max-width:1080px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--cizgi);z-index:10}
-header .kap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
-.logo{font-weight:800;font-size:1.05rem;color:var(--ana);display:flex;align-items:center;gap:8px;min-width:0}
-.logo span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;font-weight:700;font-size:.98rem;white-space:nowrap}
-.btn-ana{background:var(--vurgu);color:#111}
-.btn-wa{background:#25d366;color:#fff}
-.btn-cer{border:2px solid rgba(255,255,255,.6);color:#fff}
-header .btn{padding:9px 14px;font-size:.9rem}
-.hero{background:var(--ana);color:#fff;padding:72px 0 80px;position:relative;overflow:hidden}
-.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.06)}
-.rozet{display:inline-block;background:rgba(255,255,255,.14);padding:6px 12px;border-radius:99px;font-size:.85rem;font-weight:600;margin-bottom:18px}
-.hero h1{font-size:clamp(1.8rem,4.6vw,3rem);line-height:1.15;max-width:720px;letter-spacing:-.01em}
-.hero p{margin:16px 0 28px;font-size:1.1rem;opacity:.9;max-width:600px}
-.hero .butonlar{display:flex;flex-wrap:wrap;gap:12px}
-section{padding:64px 0}
-h2{font-size:clamp(1.4rem,3vw,2rem);margin-bottom:8px}
-.ust{color:var(--soluk);margin-bottom:32px}
-.izgara{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.kart{border:1px solid var(--cizgi);border-radius:14px;padding:22px;background:#fff}
-.kart .ik{width:46px;height:46px;border-radius:12px;background:var(--acik);color:var(--ana);display:grid;place-items:center;margin-bottom:14px}
-.kart h3{font-size:1.05rem;margin-bottom:6px}
-.kart p{color:var(--soluk);font-size:.95rem}
-.adimlar{background:var(--acik)}
-.adim{display:flex;gap:14px;align-items:flex-start}
-.adim b{flex:none;width:36px;height:36px;border-radius:50%;background:var(--ana);color:#fff;display:grid;place-items:center}
-.bolge ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
-.bolge li{border:1px solid var(--cizgi);border-radius:99px;padding:6px 14px;font-size:.92rem}
-.iletisim{background:var(--ana);color:#fff}
-.iletisim .izgara{align-items:stretch}
-.ibox{background:rgba(255,255,255,.08);border-radius:14px;padding:22px;display:flex;gap:14px;align-items:flex-start}
-.ibox small{display:block;opacity:.75}
-.ibox strong{font-size:1.1rem}
-footer{padding:24px 0 96px;color:var(--soluk);font-size:.85rem;text-align:center}
-.sabit{position:fixed;left:0;right:0;bottom:0;display:none;gap:8px;padding:10px;background:#fff;border-top:1px solid var(--cizgi)}
-.sabit .btn{flex:1;justify-content:center}
-@media (max-width:640px){header .btn{display:none}.sabit{display:flex}.hero{padding:48px 0 56px}section{padding:48px 0}}
+img{display:block;max-width:100%}
+.kap{max-width:1180px;margin:0 auto;padding:0 20px}
+.mob-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;gap:8px;padding:10px;background:var(--bg);border-top:1px solid var(--line)}
+.mob-bar a{flex:1;display:flex;justify-content:center;align-items:center;gap:8px;padding:13px;border-radius:12px;font-weight:700}
+.mob-bar .m1{background:var(--pri);color:var(--onpri)}
+.mob-bar .m2{background:#25d366;color:#fff}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+iframe.harita{width:100%;height:100%;min-height:320px;border:0;display:block}
+@media (max-width:760px){.mob-bar{display:flex}body{padding-bottom:76px}}
+
+.ust-serit{border-bottom:1px solid var(--line);font-size:.82rem;color:var(--mut)}
+.ust-serit .kap{display:flex;justify-content:space-between;padding-block:10px;gap:12px;flex-wrap:wrap}
+header .kap{text-align:center;padding-block:30px 18px}
+.marka{font-family:var(--hf);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;letter-spacing:-.01em}
+.marka em{font-style:italic;color:var(--acc)}
+header nav{display:flex;justify-content:center;gap:30px;margin-top:14px;padding-top:14px;border-top:1px solid var(--fg);border-bottom:3px double var(--fg);padding-bottom:12px;font-size:.88rem;text-transform:uppercase;letter-spacing:.14em;font-weight:500;flex-wrap:wrap}
+.manset{padding:64px 0 30px}
+.manset h1{font-size:clamp(2.6rem,7vw,6rem);font-weight:600;letter-spacing:-.035em;line-height:1.02;max-width:1000px}
+.manset h1 em{color:var(--pri)}
+.manset .alt{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:36px;align-items:end}
+.manset p{font-size:1.15rem;color:var(--mut);max-width:520px}
+.dbtns{display:flex;gap:14px;justify-content:flex-end;flex-wrap:wrap}
+.dbtn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;font-weight:600;border:1.5px solid var(--fg);transition:background .2s,color .2s}
+.dbtn:hover{background:var(--fg);color:var(--bg)}
+.dbtn.dolu{background:var(--pri);border-color:var(--pri);color:var(--onpri)}
+.genis{margin-top:48px}
+.genis img{width:100%;aspect-ratio:21/9;object-fit:cover}
+.genis figcaption{display:flex;justify-content:space-between;font-size:.82rem;color:var(--mut);padding-top:10px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.giris{padding:80px 20px;display:grid;grid-template-columns:240px 1fr;gap:56px}
+.giris h2{font-size:.85rem;text-transform:uppercase;letter-spacing:.16em;font-family:var(--bf);font-weight:600;color:var(--pri)}
+.giris p{font-size:clamp(1.25rem,2.2vw,1.65rem);line-height:1.5;font-family:var(--hf)}
+.giris p:first-letter{float:left;font-size:4.4em;line-height:.85;padding:6px 12px 0 0;color:var(--acc);font-weight:700}
+.hl{border-top:1px solid var(--fg)}
+.hrow{display:grid;grid-template-columns:90px 1fr 1.2fr 180px;gap:32px;align-items:center;padding:30px 0;border-bottom:1px solid var(--line)}
+.hrow .no{font-family:var(--hf);font-size:2.4rem;color:var(--acc);font-style:italic}
+.hrow h3{font-size:clamp(1.3rem,2.2vw,1.8rem);font-weight:600}
+.hrow p{color:var(--mut)}
+.hrow img{width:180px;height:120px;object-fit:cover;filter:saturate(.85)}
+.sec-bas{display:flex;justify-content:space-between;align-items:end;gap:20px;padding:90px 0 26px;flex-wrap:wrap}
+.sec-bas h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:600;letter-spacing:-.02em}
+.sec-bas span{color:var(--mut);font-size:.9rem;text-transform:uppercase;letter-spacing:.14em}
+.ikili{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;margin-top:90px}
+.ikili figure:nth-child(2){margin-top:90px}
+.ikili img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.ikili figure:first-child img{aspect-ratio:5/4}
+.ikili figcaption{font-size:.85rem;color:var(--mut);margin-top:10px;font-style:italic}
+.sssg{display:grid;grid-template-columns:1fr 1fr;gap:0 56px;border-top:1px solid var(--fg)}
+.sss{padding:26px 0;border-bottom:1px solid var(--line)}
+.sss summary{display:flex;justify-content:space-between;gap:16px;font-family:var(--hf);font-size:1.25rem;font-weight:600}
+.sss i{font-style:normal;color:var(--acc)}
+.sss[open] i{transform:rotate(45deg)}
+.sss p{color:var(--mut);margin-top:10px}
+.kapanis{margin-top:100px;background:var(--pri);color:var(--onpri);padding:90px 0}
+.kapanis .kap{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.kapanis small{text-transform:uppercase;letter-spacing:.16em;opacity:.7;font-size:.82rem}
+.kapanis .num{display:block;font-family:var(--hf);font-size:clamp(2.4rem,6vw,4.8rem);font-weight:600;letter-spacing:-.02em;margin:10px 0 18px}
+.kapanis ul{list-style:none;display:grid;gap:12px;opacity:.9}
+.kapanis li{display:flex;gap:10px;align-items:flex-start}
+.kapanis .hw{border:1px solid rgba(255,255,255,.25);height:340px}
+.bolgeler{font-family:var(--hf);font-size:1.15rem;line-height:1.9;color:var(--mut);margin-top:16px}
+.bolgeler b{color:var(--fg);font-weight:600}
+footer{background:var(--pri)}
+@media (max-width:960px){.manset .alt,.giris,.kapanis .kap,.sssg{grid-template-columns:1fr;gap:28px}.dbtns{justify-content:flex-start}.hrow{grid-template-columns:60px 1fr;gap:6px 18px}.hrow p{grid-column:2}.hrow img{grid-column:2;width:100%;height:180px}.ikili{grid-template-columns:1fr}.ikili figure:nth-child(2){margin-top:0}}
+@media (max-width:760px){header nav{gap:16px;font-size:.75rem}.manset{padding:40px 0 20px}.genis img{aspect-ratio:4/3}.giris{padding:56px 0}.kapanis{padding:60px 0}}
+
 </style>
 </head>
 <body>
+
+<div class="ust-serit"><div class="kap"><span>Çorlu · Tekirdağ</span><span>Her gün 08:00 – 20:00</span><a href="#iletisim"><b>Telefon numaranız</b></a></div></div>
 <header><div class="kap">
-  <a class="logo" href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><span>Birlik Elektrik</span></a>
-  <a class="btn btn-ana" href="#iletisim"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> Telefon numaranız</a>
+  <a class="marka" href="#">Birlik <em>Elektrik</em></a>
+  <nav><a href="#hizmetler">Hizmetler</a><a href="#yaklasim">Yaklaşım</a><a href="#sorular">Sorular</a><a href="#iletisim">İletişim</a></nav>
 </div></header>
 
-<section class="hero"><div class="kap">
-  <span class="rozet">Aynı gün servis · Çorlu ve çevresi</span>
-  <h1>Çorlu&#x27;da güvenli elektrik tesisatı ve arıza servisi</h1>
-  <p>Sigorta atması, kısa devre, pano ve aydınlatma işleri — ehliyetli ekip, standartlara uygun işçilik.</p>
-  <div class="butonlar">
-    <a class="btn btn-ana" href="#iletisim"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> Hemen Ara</a>
-    <a class="btn btn-wa" href="#iletisim">WhatsApp'tan Yaz</a>
-    <a class="btn btn-cer" href="#hizmetler">Hizmetlerimiz</a>
+<section class="manset"><div class="kap">
+  <h1>Elektrikte ustalık,<em> işçilikte özen.</em></h1>
+  <div class="alt"><p>Birlik Elektrik; Bağlariçi&#x27;ndeki dükkânından Çorlu&#x27;nun dört bir yanına arıza, tesisat ve aydınlatma hizmeti verir.</p>
+    <div class="dbtns"><a class="dbtn dolu" href="#iletisim"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> Hemen arayın</a><a class="dbtn" href="#iletisim">WhatsApp <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+  <figure class="genis"><img src="https://images.unsplash.com/photo-1515948725-edac7b5bb0fc?auto=format&fit=crop&q=75&w=2000&h=860" alt=""><figcaption><span>Birlik Elektrik</span><span>Çorlu, Tekirdağ</span></figcaption></figure>
+</div></section>
+
+<section class="kap giris" id="yaklasim">
+  <h2>Yaklaşımımız</h2>
+  <p>İşimizi, yaptığımız işin yıllarca sorun çıkarmaması üzerine kuruyoruz. Gelmeden önce dinliyor, başlamadan önce fiyatı konuşuyor, bitirdiğimizde ise ortalığı bulduğumuzdan daha temiz bırakıyoruz.</p>
+</section>
+
+<section class="kap" id="hizmetler">
+  <div class="sec-bas" style="padding-top:0"><h2>Hizmetler</h2><span>6 başlık</span></div>
+  <div class="hl"><div class="hrow"><span class="no">01</span><h3>Elektrik arıza servisi</h3><p>Sigorta atması, kısa devre ve kesintinin kaynağını ölçerek buluyoruz.</p><img src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?auto=format&fit=crop&q=75&w=400&h=270" alt="" loading="lazy"></div><div class="hrow"><span class="no">02</span><h3>Komple elektrik tesisatı</h3><p>Yeni yapı ve tadilatlarda projeye uygun sıva altı tesisat.</p><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=75&w=400&h=270" alt="" loading="lazy"></div><div class="hrow"><span class="no">03</span><h3>Aydınlatma &amp; avize</h3><p>Avize, LED şerit, spot ve dış cephe aydınlatması.</p><img src="https://images.unsplash.com/photo-1606170033648-5d55a3edf314?auto=format&fit=crop&q=75&w=400&h=270" alt="" loading="lazy"></div><div class="hrow"><span class="no">04</span><h3>Priz, anahtar &amp; topraklama</h3><p>Yeni hat çekimi, priz ekleme ve topraklama.</p><img src="https://images.unsplash.com/photo-1484024091473-858a1e7ece52?auto=format&fit=crop&q=75&w=400&h=270" alt="" loading="lazy"></div><div class="hrow"><span class="no">05</span><h3>Pano &amp; sigorta kutusu</h3><p>Pano yenileme, kaçak akım rölesi ve yük dengeleme.</p><img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&q=75&w=400&h=270" alt="" loading="lazy"></div><div class="hrow"><span class="no">06</span><h3>Kamera &amp; diafon</h3><p>Güvenlik kamerası, görüntülü diafon ve zayıf akım.</p><img src="https://images.unsplash.com/photo-1682345262055-8f95f3c513ea?auto=format&fit=crop&q=75&w=400&h=270" alt="" loading="lazy"></div></div>
+  <div class="ikili">
+    <figure><img src="https://images.unsplash.com/photo-1764961576606-ffb05ace4062?auto=format&fit=crop&q=75&w=1200" alt="" loading="lazy"><figcaption>Temiz bitirilmiş iş, gönül rahatlığıdır.</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1660330589693-99889d60181e?auto=format&fit=crop&q=75&w=900" alt="" loading="lazy"><figcaption>Görünmeyen yerdeki özen, görünen yerdeki sonuçtur.</figcaption></figure>
   </div>
+</section>
+
+<section class="kap" id="sorular">
+  <div class="sec-bas"><h2>Sorular</h2><span>Kısaca</span></div>
+  <div class="sssg"><details class="sss"><summary><span>Sigorta sürekli atıyor, ne yapmalıyım?</span><i>+</i></summary><p>Hattı zorlamayın ve sigortayı tekrar tekrar kaldırmayın. Arayın; arızanın kaynağını ölçerek bulalım.</p></details><details class="sss"><summary><span>Fiyat ne zaman belli oluyor?</span><i>+</i></summary><p>Yerinde keşiften sonra, işe başlamadan net fiyat veriyoruz.</p></details><details class="sss"><summary><span>Kaçak akım rölesi şart mı?</span><i>+</i></summary><p>Evet. Can güvenliği için her konutta çalışır durumda bir kaçak akım rölesi olmalı; yoksa takıyoruz.</p></details><details class="sss"><summary><span>İş yeri ve fabrikalara da geliyor musunuz?</span><i>+</i></summary><p>Evet, konutların yanında dükkân, atölye ve sanayi tesislerine de hizmet veriyoruz.</p></details></div>
+  <div class="sec-bas"><h2>Hizmet bölgesi</h2><span>Çorlu ve çevresi</span></div>
+  <p class="bolgeler"><b>Çorlu:</b> Reşadiye, Muhittin, Kazımiye, Şeyhsinan, Hıdırağa, Cemaliye, Zafer, Alipaşa, Önerler, Esentepe, Nusratiye, Rumeli, Hatip, Silahtarağa, Kemalettin, Yenice. <b>Çevre:</b> Ergene, Velimeşe, Marmaracık, Çerkezköy, Muratlı.</p>
+</section>
+
+<section class="kapanis" id="iletisim"><div class="kap">
+  <div><small>Bize ulaşın</small><a class="num" href="#iletisim">Telefon numaranız</a>
+    <ul><li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg> Bağlariçi 1. Sk. No:30A, Çorlu</li><li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Her gün 08:00 – 20:00</li><li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg> <a href="#iletisim"><u>WhatsApp'tan yazın</u></a></li></ul></div>
+  <div class="hw"><iframe class="harita" src="https://maps.google.com/maps?q=Ba%C4%9Flari%C3%A7i%201.%20Sk.%20No%3A30A%2C%20%C3%87orlu&z=15&output=embed" loading="lazy" title="Harita"></iframe></div>
 </div></section>
 
-<section id="hizmetler"><div class="kap">
-  <h2>Hizmetlerimiz</h2>
-  <p class="ust">Birlik Elektrik olarak Çorlu'da ev ve iş yerlerine şu hizmetleri veriyoruz.</p>
-  <div class="izgara">
-<article class="kart"><div class="ik"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><h3>Elektrik arıza servisi</h3><p>Sigorta atması, kısa devre ve elektrik kesintisinin kaynağını hızla buluyoruz.</p></article>
-<article class="kart"><div class="ik"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7v4M12 7v4M15 7v4M8 15h8"/></svg></div><h3>Pano &amp; sigorta kutusu</h3><p>Kaçak akım rölesi, pano yenileme ve yük dengeleme.</p></article>
-<article class="kart"><div class="ik"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M10 9v2M14 9v2M9 15h6"/></svg></div><h3>Priz &amp; anahtar tesisatı</h3><p>Yeni hat çekimi, priz ve anahtar ekleme, topraklama.</p></article>
-<article class="kart"><div class="ik"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 2z"/></svg></div><h3>Aydınlatma</h3><p>Avize, LED ve spot montajı, dış cephe ve bahçe aydınlatması.</p></article>
-<article class="kart"><div class="ik"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h12v10H3zM15 10l6-3v10l-6-3"/></svg></div><h3>Kamera &amp; diafon</h3><p>Güvenlik kamerası, görüntülü diafon ve zayıf akım sistemleri.</p></article>
-<article class="kart"><div class="ik"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg></div><h3>Bina elektrik kontrolü</h3><p>Eski binalarda tesisat kontrolü ve güvenlik raporu.</p></article>
-  </div>
-</div></section>
-
-<section class="adimlar"><div class="kap">
-  <h2>Nasıl çalışıyoruz?</h2>
-  <p class="ust">Sürpriz fiyat yok, iş bitmeden ödeme yok.</p>
-  <div class="izgara">
-    <div class="adim"><b>1</b><div><h3>Arayın ya da yazın</h3><p>Sorunu kısaca anlatın, fotoğraf atın.</p></div></div>
-    <div class="adim"><b>2</b><div><h3>Yerinde bakalım</h3><p>Gelip arızayı görür, net fiyatı söyleriz.</p></div></div>
-    <div class="adim"><b>3</b><div><h3>Temiz teslim</h3><p>İşi bitirir, ortalığı toparlayıp teslim ederiz.</p></div></div>
-  </div>
-</div></section>
-
-<section class="bolge"><div class="kap">
-  <h2>Hizmet bölgemiz</h2>
-  <p class="ust">Çorlu'nun tüm mahallelerine ve yakın ilçelere gidiyoruz.</p>
-  <ul><li>Reşadiye</li><li>Muhittin</li><li>Kazımiye</li><li>Şeyhsinan</li><li>Hıdırağa</li><li>Cemaliye</li><li>Zafer</li><li>Alipaşa</li><li>Önerler</li><li>Esentepe</li><li>Nusratiye</li><li>Rumeli</li><li>Hatip</li><li>Silahtarağa</li><li>Kemalettin</li><li>Yenice</li><li>Ergene</li><li>Velimeşe</li></ul>
-</div></section>
-
-<section class="iletisim" id="iletisim"><div class="kap">
-  <h2>İletişim</h2>
-  <p class="ust" style="color:rgba(255,255,255,.8)">Ulaşmanın en hızlı yolu telefon ya da WhatsApp.</p>
-  <div class="izgara">
-    <a class="ibox" href="#iletisim"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><div><small>Telefon</small><strong>Telefon numaranız</strong></div></a>
-    <div class="ibox"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><small>Adres</small><strong>Bağlariçi 1. Sk. No:30A, Çorlu</strong></div></div>
-    <div class="ibox"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><small>Çalışma saatleri</small><strong>Her gün 08:00 – 21:00</strong></div></div>
-  </div>
-</div></section>
-
-<footer><div class="kap">© 2026 Birlik Elektrik · Çorlu, Tekirdağ<br>Bu sayfa Birlik için hazırlanmış örnek bir tasarımdır; metinler ve saatler size göre güncellenir.</div></footer>
-
-<div class="sabit">
-  <a class="btn btn-ana" href="#iletisim"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> Ara</a>
-  <a class="btn btn-wa" href="#iletisim">WhatsApp</a>
-</div>
+<footer style="padding:28px 0 32px;text-align:center;font-size:.85rem;color:rgba(255,255,255,.55)">
+  <div class="kap">© 2026 Birlik Elektrik · Çorlu, Tekirdağ<br>
+  <span style="opacity:.8">Bu sayfa Birlik Elektrik için hazırlanmış örnek bir tasarımdır. Fotoğraflar: Unsplash.</span></div>
+</footer>
+<div class="mob-bar"><a class="m1" href="#iletisim"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> Ara</a><a class="m2" href="#iletisim"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg> WhatsApp</a></div>
 </body>
 </html>
